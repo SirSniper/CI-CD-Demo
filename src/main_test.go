@@ -34,7 +34,7 @@ func TestMagic(t *testing.T) {
 	if magic(1, 6) != 5 {
 		t.Fail()
 	}
-	if magic(2, 5) != 3 {
+	if magic(2, 5) != -3 {
 		t.Fail()
 	}
 	if magic(7, 4) != 32 {
