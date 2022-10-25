@@ -43,6 +43,8 @@ func (c *mainController) Get() {
         c.Data["result"] = add(num1, num2)
     case "product":
         c.Data["result"] = multiply(num1, num2)
+		case "magic":
+        c.Data["result"] = magic(num1, num2)
     default:
         c.TplName = "not_found.html"
     }
@@ -54,4 +56,16 @@ func add(n1, n2 int) int {
 
 func multiply(n1, n2 int) int {
     return n1 * n2
+}
+
+func magic(n1, n2 int) int {
+	if (n1 * 6 <= n2) {
+		return n2 - n1
+	} else if (n2 > n1) {
+		return n1 - n2
+	} else if (n1 * 2 - 5 > n2) {
+		return n2 + 3 * n1 // should be n2 + 4 * n1
+	} else {
+		return n1 * n2 * n2
+	}
 }
