@@ -9,5 +9,5 @@ ENV APP_HOME /go/src/demoapp
 RUN mkdir -p "$APP_HOME"
 
 WORKDIR "$APP_HOME"
-EXPOSE 8080
+EXPOSE 80
 CMD ["bee", "run"]
