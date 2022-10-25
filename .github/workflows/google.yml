@@ -25,7 +25,7 @@ env:
   GKE_SERVICE_ACCOUNT: ci-cd-demo
   GKE_DEPLOYMENT_NAME: ci-cd-demo-deployment
   GKE_REGION: us-central1
-  GKE_ZONE: us-central1a
+  GKE_ZONE: us-central1-a
   
 jobs:
   Build:
