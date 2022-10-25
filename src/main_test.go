@@ -29,3 +29,18 @@ func TestProduct(t *testing.T) {
         t.Fail()
     }
 }
+
+func TestMagic(t *testing.T) {
+	if magic(1, 6) != 5 {
+		t.Fail()
+	}
+	if magic(2, 5) != 3 {
+		t.Fail()
+	}
+	if magic(7, 4) != 32 {
+		t.Fail()
+	}
+	if magic(3, 2) != 12 {
+		t.Fail()
+	}
+}
