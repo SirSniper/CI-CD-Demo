@@ -24,11 +24,5 @@ jobs:
       working-directory: src
 
     - name: Test
-      run: go test -v ./... > TestResults.json
+      run: go test -v ./...
       working-directory: src
-
-    - name: Upload Go test results
-      uses: actions/upload-artifact@v3
-      with:
-        name: Go-results
-        path: src/TestResults.json
