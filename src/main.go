@@ -64,7 +64,7 @@ func magic(n1, n2 int) int {
 	} else if (n2 > n1) {
 		return n1 - n2
 	} else if (n1 * 2 - 5 > n2) {
-		return n2 + 3 * n1 // should be n2 + 4 * n1
+		return n2 + 4 * n1 // should be n2 + 4 * n1
 	} else {
 		return n1 * n2 * n2
 	}
