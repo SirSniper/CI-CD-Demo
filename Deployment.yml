@@ -17,7 +17,7 @@ spec:
       - name: $GKE_APP_NAME
         image: $GKE_REGION-docker.pkg.dev/$GKE_PROJECT/$GKE_PROJECT/$GKE_APP_NAME:$GITHUB_SHA
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         env:
           - name: PORT
             value: "80"

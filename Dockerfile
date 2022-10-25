@@ -21,5 +21,5 @@ COPY src/conf/ conf/
 COPY src/views/ views/
 COPY --from=builder "$APP_HOME"/demoapp $APP_HOME
 
-EXPOSE 8080
+EXPOSE 80
 CMD ["./demoapp"]
