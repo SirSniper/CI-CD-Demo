@@ -35,7 +35,7 @@ func (c *mainController) Get() {
     c.Data["operation"] = operation
     c.Data["num1"] = num1
     c.Data["num2"] = num2
-    c.TplName = "result.html"
+    c.TplName = "results.html"
 
     // Perform the calculation depending on the 'operation' route parameter
     switch operation {
